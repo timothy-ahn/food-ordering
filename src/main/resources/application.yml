@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5332/food_ordering
+    username: food_ordering
+    password: Pass@word
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    default-property-inclusion: non_null
