@@ -33,5 +33,6 @@ class MenuDishDto {
     private Integer id;
     private String name;
     private String description;
+    private Double price;
     private List<String> images;
 }

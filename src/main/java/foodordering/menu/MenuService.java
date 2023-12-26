@@ -29,6 +29,7 @@ public class MenuService {
                   .dishes(dishes.stream().map(dish -> MenuDishDto.builder()
                       .name(dish.getName())
                       .description(dish.getDescription())
+                      .price(dish.getPrice())
                       .images(dish.getDishImages().stream().map(DishImage::getUrl)
                               .toList()).build()).toList()).build());
         }
